@@ -6,7 +6,7 @@ function padTime(time) {
 }
 
 function App() {
-  const [ title, setTitle ] = useState('Let the countdown begin!!!');
+  const [ title, setTitle ] = useState('Let the countdown begin!');
   const [ timeLeft, setTimeLeft ] = useState(25 * 60);
   const [ isRunning, setIsRunning ] = useState(false);
   const intervalRef = useRef(null);
@@ -47,19 +47,21 @@ function App() {
 
   return (
     <div className="app">
-      <h2>{title}</h2>
+      <section>
+        <h2>{title}</h2>
 
-      <div className="timer">
-        <span>{minutes}</span>
-        <span>:</span>
-        <span>{seconds}</span>
-      </div>
+        <div className="timer">
+          <span>{minutes}</span>
+          <span>:</span>
+          <span>{seconds}</span>
+        </div>
 
-      <div className="buttons">
-        {!isRunning && <button onClick={startTimer}>Start</button>}
-        {isRunning && <button onClick={stopTimer}>Stop</button>}
-        <button onClick={resetTimer}>Reset</button>
-      </div>
+        <div className="buttons">
+          {!isRunning && <button onClick={startTimer}>Start</button>}
+          {isRunning && <button onClick={stopTimer}>Pause</button>}
+          <button onClick={resetTimer}>Reset</button>
+        </div>
+      </section>
     </div>
   );
 }
