@@ -11,17 +11,25 @@ function App() {
   const intervalRef = useRef(null);
 
   function startTimer(params) {
+    setTitle(`You're doing great!`);
     intervalRef.current = setInterval(() => {
       setTimeLeft(timeLeft => {
-        if (timeLeft >= 1)
-          return timeLeft - 1;
+        if (timeLeft >= 1) return timeLeft - 1;
+        resetTimer();
         return 0;
       });
     }, 1000)
   }
 
-  function stopTimer(params) {
+  function stopTimer() {
     clearInterval(intervalRef.current);
+    setTitle('Keep it up!');
+  }
+
+  function resetTimer() {
+    clearInterval(intervalRef.current);
+    setTitle('Ready to go another round?');
+    setTimeLeft(25 * 60);
   }
 
   const minutes = padTime(Math.floor(timeLeft / 60));
@@ -40,7 +48,7 @@ function App() {
       <div className="buttons">
         <button onClick={startTimer}>Start</button>
         <button onClick={stopTimer}>Stop</button>
-        <button>Reset</button>
+        <button onClick={resetTimer}>Reset</button>
       </div>
     </div>
   );
