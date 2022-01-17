@@ -11,6 +11,8 @@ function App() {
   const intervalRef = useRef(null);
 
   function startTimer(params) {
+    if (intervalRef.current !== null) return;
+
     setTitle(`You're doing great!`);
     intervalRef.current = setInterval(() => {
       setTimeLeft(timeLeft => {
@@ -22,6 +24,8 @@ function App() {
   }
 
   function stopTimer() {
+    if (intervalRef.current === null) return;
+
     clearInterval(intervalRef.current);
     setTitle('Keep it up!');
   }
