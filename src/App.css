@@ -37,12 +37,13 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .timer {
   color: var(--white-01);
   font-family: 'Major Mono Display', monospace;
-  font-size: 150px;
+  font-size: 80px;
   margin-bottom: 20px;
 }
 
@@ -68,7 +69,7 @@ h2 {
 
 .buttons button:hover {
   border-radius: 10px;
-  background: var(--white-02);
+  background: var(--white-01);
   color: var(--background-01);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
