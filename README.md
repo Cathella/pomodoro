@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+<p align="left">
+  <a href="https://www.microverse.org/">
+    <img alt="Microverse" src="https://img.shields.io/badge/-Microverse-blueviolet?style=flat-square">
+  </a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pomodoro
+The aim of this app is to help you focus on any task you are working on, such as study, writing, or coding. This app is inspired by Pomodoro Technique which is a time management method developed by Francesco Cirillo. 
 
-## Available Scripts
+![screenshot](./timer.png)
 
-In the project directory, you can run:
+## Built With
 
-### `npm start`
+- HTML, CSS, React;
+- Visual Studio, Git & GitHub;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Running locally
+To run this project, you only need a computer with a browser (like Google Chrome, Mozilla Firefox, Microsoft Edge, Apple Safari, etc.) installed, and follow these steps:
 
-### `npm test`
+1. In your terminal, type the following, to clone this repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+$ git clone https://github.com/Cathella/pomodoro.git
+```
 
-### `npm run build`
+2. After, run the following commands in your terminal:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+$ cd pomodoro
+$ npm install
+$ npm start
+```
+<details align="right">
+<summary><small>What are these commands?</summary>
+- the `$ cd` command is used to move to different folders. <br>
+- `$ npm install` install all the required dependencies to run the project.
+- while `$ npm run start` runs the app in the development mode.</small>
+</details>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. If your default browser do not start automatically, open it and type `http://localhost:3000` to run the application.
 
-### `npm run eject`
+### Running tests
+To launch the test runner in the interactive watch mode, run `$ npm test` in your console.
+> To read more information about running tests, visit [create react app website](https://create-react-app.dev/docs/running-tests/);
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Live server
+Optionally, you can run the application [here]().
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Author 👤
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+👤 **Nakitto Catherine**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- GitHub: [@githubhandle](https://github.com/Cathella)
+- Twitter: [@twitterhandle](https://twitter.com/cathella9)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nakitto-catherine2020/)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions, issues, and feature requests are welcome!
 
-### Code Splitting
+Feel free to check the [issues page](https://github.com/Cathella/pomodoro/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 License
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./LICENSE) licensed.
